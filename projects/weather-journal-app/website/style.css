@@ -1,0 +1,210 @@
+body{
+    background-color: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(130px, auto);
+    grid-template-areas: "a a"
+                         "b c";
+    height:100vh;
+    color: black;
+    justify-content: auto;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftGrid{
+    display: grid;
+    grid-auto-rows: min-content;
+    height:100vh;
+    color: black;
+    justify-content: auto;
+    grid-gap: 6em;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.rightGrid{
+    margin-right: 15px;
+    height:100vh;
+    color: black;
+    justify-content: auto;
+    grid-gap: 6em;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg{
+    background-image: url('../bg.jpg');
+    background-color: #fff;
+    background-size: cover;
+}
+
+#zip{
+    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.holder{
+    text-align: center;
+    height: 50px;
+    align-items: center;
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+#entryHolder{
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#feelings{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#city{
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.generateButton{
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#date{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#temp{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#content{
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#humidity{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#condition{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wind{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headline {
+    grid-area: a;
+    margin: 30px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    margin-left: 10px;
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    text-align: center;
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:rgba(59, 74, 107, .5);
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+
+button{
+    width: 250px;
+    height: 70px;
+    background: #3b4a6b;
+    color: black;
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:rgba(59, 74, 107, .5);
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    height: 50px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: rgb(43, 40, 40); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: rgb(43, 40, 40); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: rgb(43, 40, 40); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+} 
